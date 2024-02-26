@@ -1,0 +1,30 @@
+Folder Structure -
+
+	input_files
+		-DATA.dat
+		-DATA1.dat
+	output_files
+		-results.csv
+	file_processor.py
+	file_reader_writer.py
+
+file_processor.py
+	- main file to process and save the result
+	- fetches all .dat files from input_files directory and pass there names to file_reader
+	- after getting combined df from file_reader, required calculations are applied
+	- final calculated df is passed to file_writer to write output in output_files directory
+
+file_reader_writer.py 
+	- contains two functions - file_reader, file_writer
+	- file_reader 
+		- takes two parameters - file names, input file path
+		- read all csv/.dat files and returns one combined dataframe
+
+	- file_writer
+		- takes output directory path, dataframe to write
+		- writes dataframe to csv
+
+
+Note - Run file_processor.py to get the expected output.	
+
+
